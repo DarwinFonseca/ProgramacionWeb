@@ -3,7 +3,7 @@
     session_start(); // al volver al index si existe una session, esta sera destruida, existen formas de conservarlas como con un if(session_start()!= NULL). Pero por el momento para el ejemplo no es valido.
     session_destroy();  // Se destruye la session existente de esta forma no permite el duplicado.
     include_once('modelo/conexion.php');
-    if(!isset($_SESSION['rol'])){
+    if(!isset($_SESSION['id_cargo'])){
       header('Location: ../index.php');
     }
 ?>

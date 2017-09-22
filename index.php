@@ -7,24 +7,33 @@
 <html lang="es">
     <head>
       <meta charset="utf-8">
-            <title>Iniciar sesión</title>
-    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Iniciar sesión</title>
+</head>
 
     <body>
-            <h1>Iniciar sesión</h1>
+
+<div class="container">
+            <h1>Interfaz de control por personal.</h1>
             <form action="controlador/control.php" method="POST">
+              <div class="form-group">
               <p>
-                      <label>Correo:</label> <br />
-                      <input type="text" name="correo" />
+                      <label>Id de usuario:</label> <br />
+                      <input class="form-control" type="text" placeholder="ID del Responsable" name="id_responsable" />
               </p>
               <p>
-                      <label>Password:</label> <br />
-                      <input type="password" name="password" />
+                      <label>Número de documento de Identidad:</label> <br />
+                      <input type="password" class="form-control" placeholder="DNI" name="dni" />
               </p>
                     <p>
-                            <input type="submit" value="Iniciar sesión" id="btnIniciar" name="btnIniciar" />
+                            <input class="btn" type="submit" value="Iniciar sesión" id="btnIniciar" name="btnIniciar" />
                     </p><br>
 <!--                    También puedes <a href="registro.php">registrarte</a>  -->
+</div>
             </form>
+          </div>
     </body>
 </html>
